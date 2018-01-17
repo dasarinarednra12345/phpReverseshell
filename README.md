@@ -1,6 +1,5 @@
 # phpReverseshell
-Note: 1. This is PHP based reverse shell 
-
+      Note: 1. This is PHP based reverse shell 
       2. shell_exec() should be enables at server side (Victim web server)
       
 Upload the 9090909090101010101010.php into webserver.
